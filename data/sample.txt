@@ -1,0 +1,3 @@
+Arcates, yazılım ve yapay zeka çözümleri geliştiren bir teknoloji projesidir.
+AI Knowledge RAG sistemi, yüklenen dokümanlardan bilgi bulup kullanıcı sorularını cevaplamak için geliştirilmektedir.
+Sistem ileride PDF, metin ve Markdown belgelerini destekleyecektir.
