@@ -1,4 +1,4 @@
-def chunk_text(text: str, chunk_size: int = 100) -> list[str]:
+def chunk_text(text: str, chunk_size: int = 100, overlap_words: int = 3) -> list[str]:
     words = text.split()
 
     chunks = []
@@ -11,7 +11,9 @@ def chunk_text(text: str, chunk_size: int = 100) -> list[str]:
             current_chunk.append(word)
         else:
             chunks.append(" ".join(current_chunk))
-            current_chunk = [word]
+
+            overlap = current_chunk[-overlap_words:]
+            curretn_chunk = overlap + [word]
 
     if current_chunk:
         chunks.append(" ".join(current_chunk))
