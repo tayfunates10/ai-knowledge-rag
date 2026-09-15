@@ -5,5 +5,4 @@ def chunk_text(text: str, chunk_size: int = 100) -> list[str]:
         end = start + chunk_size
         chunk = text[start:end]
         chunks.append(chunk)
-
-return chunks
+  return chunks
