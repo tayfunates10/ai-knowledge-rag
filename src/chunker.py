@@ -13,7 +13,7 @@ def chunk_text(text: str, chunk_size: int = 100) -> list[str]:
             chunks.append(" ".join(current_chunk))
             current_chunk = [word]
 
-        if current_chunk:
-         current_chunk.append(" ".join(current_cunk))
-    
+    if current_chunk:
+        chunks.append(" ".join(current_chunk))
+
     return chunks
