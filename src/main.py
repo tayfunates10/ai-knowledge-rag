@@ -17,7 +17,7 @@ def main():
 
     best_chunk, best_score = retrieve_best_chunk(
         query,
-        chunk,
+        chunks,
         model
     )
 
