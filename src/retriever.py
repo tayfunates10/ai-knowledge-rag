@@ -5,7 +5,7 @@ def retrieve_best_chunk(query: str, chunks: list[str], model) -> tuple[str,float
     query_embedding = model.encode(query).tolist()
 
     best_chunk = ""
-    best_score = (-1, 0)
+    best_score = -1.0
 
     for chunk in chunks:
         chunk_embedding = model.encode(chunk).tolist()
