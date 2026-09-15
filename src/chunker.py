@@ -13,7 +13,7 @@ def chunk_text(text: str, chunk_size: int = 100, overlap_words: int = 3) -> list
             chunks.append(" ".join(current_chunk))
 
             overlap = current_chunk[-overlap_words:]
-            curretn_chunk = overlap + [word]
+            current_chunk = overlap + [word]
 
     if current_chunk:
         chunks.append(" ".join(current_chunk))
