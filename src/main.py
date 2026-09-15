@@ -6,5 +6,5 @@ def main():
     print("AI Knowledge RAG başlatıldı")
     print(document)
 
-if __name__ == "__mainx__":
+if __name__ == "__main__":
     main()
