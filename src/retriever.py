@@ -1,11 +1,11 @@
 from vector_math import cosine_similarity
 
 
-def retrieve_best_chunk(query: str, chunks: list[str], model -> tuple[str,float]:
+def retrieve_best_chunk(query: str, chunks: list[str], model) -> tuple[str,float]:
     query_embedding = model.encode(query).tolist()
 
     best_chunk = ""
-    best_score = -1,0
+    best_score = (-1, 0)
 
     for chunk in chunks:
         chunk_embedding = model.encode(chunk).tolist()
@@ -19,4 +19,4 @@ def retrieve_best_chunk(query: str, chunks: list[str], model -> tuple[str,float]
             best_score = score
             best_chunk = chunk
 
-      return best_chunk, best_score
+    return best_chunk, best_score
